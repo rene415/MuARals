@@ -8,7 +8,7 @@ import json
 
 #Collecting the page
 page = requests.get('https://freedomarchives.org/La_Lucha_Continua/Martin_Luther_King.html')
-print(page)
+#print(page)
 soup = BeautifulSoup(page.text, 'html.parser')
 
 
@@ -20,8 +20,9 @@ my_dict = {
     "person" : "Martin Luther King Jr",
     "message" : text
 }
-print(my_dict)
+#print(my_dict)
 
 d = json.dumps(my_dict)
-print(d)
+#print(d)
+sys.exit(d)
 
